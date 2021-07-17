@@ -4,8 +4,8 @@ const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPl
 const UglifyJsPlugin = require('uglifyjs-webpack-plugin');
 
 module.exports = {
-    mode: 'production',
-    entry: './src/index.tsx',
+    mode: 'development',
+    entry: ['@babel/polyfill', './src/index.tsx'],
     output: {
         filename: '[name].[contenthash].js',
         path: path.resolve(__dirname, 'dist'),
@@ -49,7 +49,7 @@ module.exports = {
     plugins: [
         new HTMLWebpackPlugin({
             template: path.join(__dirname, 'src', 'index.html'),
-            title: 'Cloud'
+            title: 'Starships'
         }),
         new BundleAnalyzerPlugin(),
     ],

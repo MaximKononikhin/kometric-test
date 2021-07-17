@@ -1,6 +1,6 @@
 import axios from "axios";
-import { BASE_URL } from "../constants";
-import { IMakeRequest } from "../types";
+import { BASE_URL } from "../../common/constants";
+import { IMakeRequest } from "../../common/types";
 
 const makeRequest = ({
     url = '/',
