@@ -1,0 +1,1 @@
+export const SET_NOT_FOUND = 'SET_NOT_FOUND';

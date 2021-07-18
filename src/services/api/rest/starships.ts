@@ -1,3 +1,3 @@
 import makeRequest from "../makeRequest";
 
-export const getAllStarships = () => makeRequest({url: ''});
+export const getAllStarships = (page: number) => makeRequest({url: `?page=${page}`});

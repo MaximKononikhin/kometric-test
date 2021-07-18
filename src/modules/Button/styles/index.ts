@@ -1,6 +1,7 @@
 export const btnStyles = `
-
     position: relative;
+
+    min-width: 135px;
 
     padding: 9px 32px;
 
@@ -11,6 +12,8 @@ export const btnStyles = `
 
     transition: 0.3s;
     cursor: pointer;
+
+    font-size: 14px;
 
     &::before {
         content: '';

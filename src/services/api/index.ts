@@ -1,7 +1,9 @@
-import { makeSearchRequest as search } from './rest/search';
+import { makeSearchRequest as searchStarships } from './rest/search';
 import {getAllStarships as starships} from './rest/starships';
+import { getStarship } from './rest/starship';
 
 export default {
-    search,
-    starships
+    searchStarships,
+    starships,
+    getStarship
 };

@@ -11,7 +11,7 @@ type IButton = {
 
 const Button: React.FC<IButton> = ({children, onClick, ownStyles}) => {
     return (
-        <button css={css(ownStyles? ownStyles : styles.btnStyles)} onClick={onClick}>
+        <button css={css(styles.btnStyles, ownStyles? ownStyles : '')} onClick={onClick}>
             {children}
         </button>
     )

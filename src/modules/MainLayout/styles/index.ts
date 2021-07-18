@@ -16,6 +16,7 @@ export const animatedOrb = `
 
 export const logoStyle = `
     position: fixed;
+    z-index: 3;
     top: 86px;
     left: 136px;
 `;
@@ -23,7 +24,7 @@ export const logoStyle = `
 export const torStyles = `
     position: fixed;
     left: 0;
-    bottom: -200px;
+    bottom: -250px;
     writing-mode: vertical-rl;
     transform: rotate(29.15deg);
 `
